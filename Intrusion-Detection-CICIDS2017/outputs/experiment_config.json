@@ -1,0 +1,64 @@
+{
+  "random_state": 42,
+  "data_metadata": {
+    "source": "local_raw_csv_files",
+    "csv_files": [
+      "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "Monday-WorkingHours.pcap_ISCX.csv",
+      "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "Tuesday-WorkingHours.pcap_ISCX.csv",
+      "Wednesday-workingHours.pcap_ISCX.csv"
+    ],
+    "label_mode": "broad_multiclass",
+    "rows_after_cleaning": 2574264,
+    "num_features_after_cleaning": 69,
+    "dropped_duplicate_rows": 256479,
+    "dropped_all_null_columns": [],
+    "dropped_mostly_missing_columns": [],
+    "dropped_constant_columns": [
+      "Bwd PSH Flags",
+      "Bwd URG Flags",
+      "Fwd Avg Bytes/Bulk",
+      "Fwd Avg Packets/Bulk",
+      "Fwd Avg Bulk Rate",
+      "Bwd Avg Bytes/Bulk",
+      "Bwd Avg Packets/Bulk",
+      "Bwd Avg Bulk Rate"
+    ],
+    "dropped_metadata_columns": [
+      "Destination Port",
+      "Label",
+      "__source_file"
+    ],
+    "dropped_rare_class_rows": 0,
+    "max_missing_ratio": 0.8
+  },
+  "label_mode": "broad_multiclass",
+  "test_size": 0.2,
+  "batch_size": 1024,
+  "mlp_epochs": 5,
+  "mlp_learning_rate": 0.001,
+  "dropout": 0.3,
+  "sklearn_train_limit": 300000,
+  "fgsm_epsilon": 0.05,
+  "pgd_epsilon": 0.05,
+  "pgd_alpha": 0.01,
+  "pgd_steps": 10,
+  "clip_extreme_values": true,
+  "clip_lower_quantile": 0.001,
+  "clip_upper_quantile": 0.999,
+  "max_missing_ratio": 0.8,
+  "class_names": [
+    "Bots",
+    "Brute Force",
+    "DDoS",
+    "DoS",
+    "Infiltration",
+    "Normal Traffic",
+    "Port Scanning",
+    "Web Attacks"
+  ]
+}

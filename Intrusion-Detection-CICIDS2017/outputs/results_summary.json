@@ -1,0 +1,83 @@
+[
+  {
+    "model": "Logistic Regression",
+    "condition": "clean",
+    "accuracy": 0.9870098843747633,
+    "weighted_f1": 0.9860839338884211,
+    "macro_f1": 0.6083661769124764,
+    "balanced_accuracy": 0.586983412065208,
+    "notes": ""
+  },
+  {
+    "model": "Random Forest",
+    "condition": "clean",
+    "accuracy": 0.9979974866612412,
+    "weighted_f1": 0.9979029737626539,
+    "macro_f1": 0.8382512081696329,
+    "balanced_accuracy": 0.8021060094127062,
+    "notes": ""
+  },
+  {
+    "model": "MLP",
+    "condition": "clean",
+    "accuracy": 0.9948548420617147,
+    "weighted_f1": 0.9943372799788646,
+    "macro_f1": 0.6829416355673803,
+    "balanced_accuracy": 0.6557392529197443,
+    "notes": ""
+  },
+  {
+    "model": "MLP",
+    "condition": "FGSM",
+    "accuracy": 0.9238423394638858,
+    "weighted_f1": 0.9223635029030518,
+    "macro_f1": 0.45967700414345486,
+    "balanced_accuracy": 0.47173600503864366,
+    "notes": "epsilon=0.05"
+  },
+  {
+    "model": "MLP",
+    "condition": "PGD",
+    "accuracy": 0.9161585928410634,
+    "weighted_f1": 0.914961658199468,
+    "macro_f1": 0.43988917375037834,
+    "balanced_accuracy": 0.447228834228672,
+    "notes": "epsilon=0.05, alpha=0.01, steps=10"
+  },
+  {
+    "model": "Logistic Regression",
+    "condition": "FGSM",
+    "accuracy": 0.902236172266647,
+    "weighted_f1": 0.8862776035430676,
+    "macro_f1": 0.3148715111411172,
+    "balanced_accuracy": 0.29246995000992415,
+    "notes": "transfer attack generated from MLP"
+  },
+  {
+    "model": "Logistic Regression",
+    "condition": "PGD",
+    "accuracy": 0.8997713910572532,
+    "weighted_f1": 0.8849754730495544,
+    "macro_f1": 0.316597874447343,
+    "balanced_accuracy": 0.29527124213112493,
+    "notes": "transfer attack generated from MLP"
+  },
+  {
+    "model": "Random Forest",
+    "condition": "FGSM",
+    "accuracy": 0.9176230885320664,
+    "weighted_f1": 0.8938008888671767,
+    "macro_f1": 0.30888977348369867,
+    "balanced_accuracy": 0.28334747182776454,
+    "notes": "transfer attack generated from MLP"
+  },
+  {
+    "model": "Random Forest",
+    "condition": "PGD",
+    "accuracy": 0.9139657339085137,
+    "weighted_f1": 0.8901482290793261,
+    "macro_f1": 0.30647622187405865,
+    "balanced_accuracy": 0.278643943200381,
+    "notes": "transfer attack generated from MLP"
+  }
+]
